@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-
+from ..items import GenericItem
 
 class GenericSpider(scrapy.Spider):
     name = "generic"
@@ -21,4 +21,8 @@ class GenericSpider(scrapy.Spider):
         title = response.xpath("/html/head/title/text()").extract_first()
         description = response.xpath("/html/head/meta/@content").extract()
         
-        print title, description
+        item = StackItem()
+        item['title'] = title
+        item['description'] = description
+
+        yield item
