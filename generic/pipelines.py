@@ -20,4 +20,4 @@ class MongoDBPipeline(object):
 
     def get_sites(self):
     	collection_sites = self.db.sites
-    	return collection_sites.find()
+    	return collection_sites.find( )
