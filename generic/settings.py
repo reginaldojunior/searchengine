@@ -89,3 +89,4 @@ ITEM_PIPELINES = ['generic.pipelines.MongoDBPipeline', ]
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "searchengine"
+MONGODB_COLLECTION_SITES = "sites"
