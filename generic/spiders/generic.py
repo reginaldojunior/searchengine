@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
+
 class GenericSpider(scrapy.Spider):
     name = "generic"
     
