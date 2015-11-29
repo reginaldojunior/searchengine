@@ -21,7 +21,7 @@ class GenericSpider(scrapy.Spider):
         title = response.xpath("/html/head/title/text()").extract_first()
         description = response.xpath("/html/head/meta/@content").extract()
         
-        item = StackItem()
+        item = GenericItem()
         item['title'] = title
         item['description'] = description
 
