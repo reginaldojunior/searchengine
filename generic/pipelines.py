@@ -26,8 +26,9 @@ class MongoDBPipeline(object):
 		collection_infos = self.db.infos
 
 		data = {
-			'title'        : item['title'],
+			'title'       : item['title'],
 			'description' : item['description'],
+			'url'		  :	item['url'],
 			'active'      : 1
 		}
 

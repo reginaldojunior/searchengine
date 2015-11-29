@@ -11,3 +11,4 @@ from scrapy.item import Item, Field
 class GenericItem(scrapy.Item):
 	title = Field()
 	description = Field()
+	url = Field() 

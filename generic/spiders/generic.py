@@ -22,5 +22,6 @@ class GenericSpider(scrapy.Spider):
         item = GenericItem()
         item['title'] = title
         item['description'] = description
+        item['url'] = response.url
 
         self.MongoDB.create_info(item)
