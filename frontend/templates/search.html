@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SearchEngine</title>
+</head>
+<body>
+	<br>
+	Resultados
+	<ul>
+		{% for result in results %}
+		<li>
+			<a href="" target="_blank">{{result['title']}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
