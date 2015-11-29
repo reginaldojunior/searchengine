@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SearchEngine</title>
+</head>
+<body>
+	<form>
+		<h1>Pesquisar Site</h1>
+		<input type="text" name="search" />
+		<input type="submit" value="Pesquisar">
+	</form>
+	<form>
+		<h1>Cadastrar Site</h1>
+		<input type="text" name="site" />
+		<input type="submit" value="cadastrar">
+	</form>
+	<br>
+	Sites Cadastrados
+	<ul>
+		{% for site in sites %}
+		<li>{{site['url']}}</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
